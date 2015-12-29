@@ -201,8 +201,8 @@ export GREP_COLOR='1;31' # green for matches
 # 2.5) sort options
 # Ensures cross-platform sorting behavior of GNU sort.
 # http://www.gnu.org/software/coreutils/faq/coreutils-faq.html#Sort-does-not-sort-in-normal-order_0021
-unset LANG
-export LC_ALL=POSIX
+#unset LANG
+#export LC_ALL=POSIX
 
 # 2.6) Install rlwrap if not present
 # http://stackoverflow.com/a/677212
@@ -219,9 +219,17 @@ if [ -s ~/.nvm/nvm.sh ]; then
     nvm use v0.10.12 &> /dev/null # silence nvm use; needed for rsync
 fi
 
+# ssh add bb
+alias push-bb="ssh-agent /bin/bash -c 'ssh-add ~/.ssh/bitbucket_rsa && git push'"
+
 ## ------------------------------
 ## -- 3) User-customized code  --
 ## ------------------------------
 
 ## Define any user-specific variables you want here.
 source ~/.bashrc_custom
+export NODE_PATH=/usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript:/usr/local/lib/node_modules
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+export PATH="$PATH:$HOME/fp/scala/learn/activator-dist-1.3.6" # Add activator

@@ -1,0 +1,20 @@
+;;;; Emacs Bookmark Format Version 1 ;;;;
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("gamePlay.js"
+ (filename . "~/webdev/learn/yuzbir-react/app/reducers/gamePlay.js")
+ (front-context-string . ") {\n  let stones")
+ (rear-context-string . "iftDirection = 1")
+ (position . 3075))
+("process"
+ (filename . "~/webdev/learn/yuzbir-react/app/reducers/__tests__/GamePlay-Full-test.js")
+ (front-context-string . "selfTurn);\n\n    ")
+ (rear-context-string . "  ]),\n          ")
+ (position . 17408))
+("test"
+ (filename . "~/webdev/learn/yuzbir-react/app/reducers/__tests__/GamePlay-Full-test.js")
+ (front-context-string . "\n            moc")
+ (rear-context-string . "LOR,\n          [")
+ (position . 17189))
+)

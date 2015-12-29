@@ -1,1 +1,4 @@
 
+export TERM=xterm-256color
+# disable C-S for vim save functionality
+stty -ixon
