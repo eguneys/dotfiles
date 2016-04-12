@@ -5,10 +5,13 @@
 ;; -- Global Settings --
 ;; ---------------------
 
-(require 'package) ;; You might already have this line
-(add-to-list 'package-archives
-	     '("melpa" . "http://melpa.org/packages/") t)
-(package-initialize)
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+;; (package-initialize)
+(load "~/.emacs.d/init-packages")
 
 (add-to-list 'load-path "~/.emacs.d/lisp")
 (require 'cl)
@@ -86,11 +89,11 @@
 ;; -- JS Mode configuration --
 ;; ---------------------------
 (load "js-config.el")
-(add-to-list 'load-path "~/.emacs.d/jade-mode") ;; github.com/brianc/jade-mode
-(require 'sws-mode)
-(require 'jade-mode)    
-(add-to-list 'auto-mode-alist '("\\.styl$" . sws-mode))
-(add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))
+;(add-to-list 'load-path "~/.emacs.d/jade-mode") ;; github.com/brianc/jade-mode
+;(require 'sws-mode)
+;(require 'jade-mode)    
+;(add-to-list 'auto-mode-alist '("\\.styl$" . sws-mode))
+;(add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))
 
 (add-hook 'after-init-hook (lambda () (load "~/.emacs.d/after-init.el")))
  
