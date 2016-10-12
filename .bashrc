@@ -189,6 +189,7 @@ alias du='du -ch --max-depth=1'
 alias treeacl='tree -A -C -L 2'
 
 # 2.3) Text and editor commands
+alias e='emacsclient -t'
 alias em='emacs -nw'     # No X11 windows
 alias eqq='emacs -nw -Q' # No config and no X11
 export EDITOR='emacs -nw'
@@ -219,8 +220,12 @@ if [ -s ~/.nvm/nvm.sh ]; then
     nvm use v0.10.12 &> /dev/null # silence nvm use; needed for rsync
 fi
 
+alias closure-compiler="java -jar ~/bin/compiler.jar"
+
 # ssh add bb
+alias sad="ssh-agent /bin/bash -c 'ssh-add ~/.ssh/bitbucket_rsa && ssh-add ~/.ssh/github_rsa'"
 alias push-bb="ssh-agent /bin/bash -c 'ssh-add ~/.ssh/bitbucket_rsa && git push'"
+alias push-gt="ssh-agent /bin/bash -c 'ssh-add ~/.ssh/github_rsa && git push'"
 
 ## ------------------------------
 ## -- 3) User-customized code  --
@@ -233,3 +238,5 @@ export NODE_PATH=/usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript:/us
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 export PATH="$PATH:$HOME/fp/scala/learn/activator-dist-1.3.6" # Add activator
+
+export PATH="$PATH:$HOME/bin"

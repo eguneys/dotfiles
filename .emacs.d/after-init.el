@@ -1,8 +1,15 @@
 (load-theme 'solarized-light t)
 
+;; switch buffers
+(defun switch-to-previous-buffer ()
+  (interactive)
+  (switch-to-buffer (other-buffer (current-buffer) 1)))
+(global-set-key (kbd "C-x t") 'switch-to-previous-buffer)
+
 ;; expand-region
 (require 'expand-region)
 (global-set-key (kbd "C-M-h") 'er/expand-region)
+(global-set-key (kbd "C-M-w") 'er/mark-outside-quotes)
 
 ;; whitespace-mode
 (setq whitespace-style '(face tabs spaces trailing lines space-before-tab indentation empty space-after-tab space-mark tab-mark))
@@ -75,6 +82,8 @@
 ;; unbind mardown M-n M-p bindings
 (add-hook 'markdown-mode-hook 
           (lambda()
+            (setq comment-start "~~")
+            (setq comment-end "~~")
             (local-unset-key (kbd "M-n"))
             (local-unset-key (kbd "M-p"))))
 
