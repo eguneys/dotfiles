@@ -14,6 +14,8 @@ mv .emacs.d .emacs.d~
 ln -s dotfiles/.emacs.d .
 ```
 
+See https://stackoverflow.com/questions/14598753/running-bash-script-in-cygwin-on-windows-7/14607651#14607651 for mintty newline error.
+
 See also http://github.com/startup-class/setup to install prerequisite
 programs. If all goes well, in addition to a more useful prompt, now you can
 do `emacs -nw hello.js` and hitting `C-c!` to launch an interactive SSJS
