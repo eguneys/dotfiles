@@ -4,7 +4,7 @@
 	     '("melpa" . "http://melpa.org/packages/"))
 
 (setq package-list
-      '(web-mode js2-mode scala-mode2 expand-region markdown-mode))
+      '(web-mode js2-mode expand-region markdown-mode))
 
 ; activate all the packages
 (package-initialize)
