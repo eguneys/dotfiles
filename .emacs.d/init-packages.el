@@ -7,7 +7,7 @@
       '(web-mode js2-mode expand-region markdown-mode))
 
 ; activate all the packages
-(package-initialize)
+;(package-initialize)
 
 
 ; fetch the list of packages available
