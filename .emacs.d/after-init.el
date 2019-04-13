@@ -1,4 +1,5 @@
-(load-theme 'solarized-light t)
+;(load-theme 'solarized-light t)
+(load-theme 'zenburn t)
 
 ;; switch buffers
 (defun switch-to-previous-buffer ()

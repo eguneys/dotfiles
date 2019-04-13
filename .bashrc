@@ -221,7 +221,7 @@ if [ -s ~/.nvm/nvm.sh ]; then
     nvm use v0.10.12 &> /dev/null # silence nvm use; needed for rsync
 fi
 
-alias closure-compiler="java -jar ~/bin/compiler.jar"
+alias closure-compiler="java -jar ~/bin/closure-compiler-v20190325.jar"
 
 # ssh add bb
 alias sad="ssh-agent /bin/bash -c 'ssh-add ~/.ssh/bitbucket_rsa && ssh-add ~/.ssh/github_rsa'"
@@ -235,6 +235,10 @@ alias push-gt="ssh-agent /bin/bash -c 'ssh-add ~/.ssh/github_rsa && git push'"
 ## Define any user-specific variables you want here.
 source ~/.bashrc_custom
 export NODE_PATH=/usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript:/usr/local/lib/node_modules
+
+export GEM_HOME="$HOME/gems"
+
+export PATH="$PATH:$HOME/gems/bin"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 

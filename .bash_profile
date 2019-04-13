@@ -65,6 +65,8 @@ export PATH=/usr/local/sbin:$PATH
 
 # node permissions https://docs.npmjs.com/getting-started/fixing-npm-permissions
 export PATH=~/.npm-global/bin:$PATH
+export PATH=~/.yarn/bin:$PATH
+
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
