@@ -223,6 +223,7 @@ fi
 
 alias closure-compiler="java -jar ~/bin/closure-compiler-v20190325.jar"
 
+# https://superuser.com/questions/960267/how-to-make-alias-ssh-add-bin-bash-in-bashrc
 # ssh add bb
 alias sad="ssh-agent /bin/bash -c 'ssh-add ~/.ssh/bitbucket_rsa && ssh-add ~/.ssh/github_rsa'"
 alias push-bb="ssh-agent /bin/bash -c 'ssh-add ~/.ssh/bitbucket_rsa && git push'"
